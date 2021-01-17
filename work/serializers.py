@@ -81,10 +81,7 @@ class WorkDetailSerializer(serializers.ModelSerializer):
 
 
 class TypeWorkSerializer(serializers.ModelSerializer):
-
-    name = serializers.CharField(required=True)
-    slug = serializers.SlugField()
-
+    '''Тип работы'''
     class Meta:
         model = Work
-        fields = ('id', 'type_work', 'slug')
+        fields = ('id', 'type_work')

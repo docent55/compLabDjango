@@ -16,7 +16,4 @@ urlpatterns = [
     path('subdivision/', views.SubdivisionListAPIView.as_view(), name='subdivision'),
     path('subdivision/<int:pk>', views.SubdivisionUpdateDeleteView.as_view(), name='updateDeleteSubdivision'),
     path('employee/', views.EmployeeListView.as_view(), name='employee'),
-
-
-
 ]

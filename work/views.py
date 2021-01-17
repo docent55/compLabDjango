@@ -24,12 +24,11 @@ class WorkListAPIView(ListAPIView):
     # permission_classes = [permissions.IsAuthenticated]
 
 class WorkAddAPIView(CreateAPIView):
-
+    '''Добовление работы'''
     queryset = Work.objects.all()
     serializer_class = WorkAddSerializer
 
-
-class WorkDetailView(RetrieveUpdateAPIView):
+class WorkDetailView(RetrieveUpdateDestroyAPIView):
     """Вывод информации о материале"""
     queryset = Work.objects.all()
     serializer_class = WorkDetailSerializer
