@@ -5,6 +5,7 @@ from .models import Work, TypeWork, Initiator, Employee, Researched_objects, Ran
 class WorkAdmin(admin.ModelAdmin):
     list_display = ('number', 'serial_number', 'receipt_date', 'initiator')
 
+
 admin.site.register(Work, WorkAdmin)
 admin.site.register(TypeWork)
 admin.site.register(Initiator)
